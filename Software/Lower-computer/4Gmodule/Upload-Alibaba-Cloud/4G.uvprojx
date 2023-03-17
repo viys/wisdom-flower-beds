@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>.\USER;.\USER\Basic;.\USER\Hardware</IncludePath>
+              <IncludePath>.\USER;.\USER\Systick;.\USER\Usart;.\USER\Timer;.\USER\4G-Module;.\USER\Dht11</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -394,42 +394,57 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Basic</GroupName>
+          <GroupName>Systick</GroupName>
           <Files>
             <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\Basic\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>tim6.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\Basic\tim6.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\Basic\usart.c</FilePath>
+              <FilePath>.\USER\Systick\delay.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Hardware</GroupName>
+          <GroupName>Usart</GroupName>
+          <Files>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\Usart\usart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Timer</GroupName>
+          <Files>
+            <File>
+              <FileName>tim6.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\Timer\tim6.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>4G-Module</GroupName>
           <Files>
             <File>
               <FileName>bc26.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\Hardware\bc26.c</FilePath>
-            </File>
-            <File>
-              <FileName>dht11.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\Hardware\dht11.c</FilePath>
+              <FilePath>.\USER\4G-Module\bc26.c</FilePath>
             </File>
             <File>
               <FileName>mqtt.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\Hardware\mqtt.c</FilePath>
+              <FilePath>.\USER\4G-Module\mqtt.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Dht11</GroupName>
+          <Files>
+            <File>
+              <FileName>dht11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\Dht11\dht11.c</FilePath>
             </File>
           </Files>
         </Group>
