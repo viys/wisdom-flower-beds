@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>.\USER</IncludePath>
+              <IncludePath>.\USER;.\USER\Basic;.\USER\Hardware</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -391,35 +391,45 @@
               <FileType>1</FileType>
               <FilePath>.\USER\main.c</FilePath>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Basic</GroupName>
+          <Files>
             <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>bc26.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\bc26.c</FilePath>
+              <FilePath>.\USER\Basic\delay.c</FilePath>
             </File>
             <File>
               <FileName>tim6.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\tim6.c</FilePath>
+              <FilePath>.\USER\Basic\tim6.c</FilePath>
             </File>
             <File>
-              <FileName>mqtt.c</FileName>
+              <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\mqtt.c</FilePath>
+              <FilePath>.\USER\Basic\usart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Hardware</GroupName>
+          <Files>
+            <File>
+              <FileName>bc26.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\Hardware\bc26.c</FilePath>
             </File>
             <File>
               <FileName>dht11.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\dht11.c</FilePath>
+              <FilePath>.\USER\Hardware\dht11.c</FilePath>
+            </File>
+            <File>
+              <FileName>mqtt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\Hardware\mqtt.c</FilePath>
             </File>
           </Files>
         </Group>
