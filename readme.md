@@ -2,7 +2,7 @@
 
 ## 规划图
 
-![智慧花坛规划](https://778b-1317013106.cos.ap-nanjing.myqcloud.com/img/202303052002026.png)
+![智慧花坛规划](https://raw.githubusercontent.com/viys/picture-bed/master/img/Diagram.png)
 
 
 
